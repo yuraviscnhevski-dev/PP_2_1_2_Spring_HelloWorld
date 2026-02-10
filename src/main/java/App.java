@@ -8,6 +8,5 @@ public class App {
         HelloWorld bean =
                 (HelloWorld) applicationContext.getBean("helloworld");
         System.out.println(bean.getMessage());
-        System.out.println("привет");
     }
 }
