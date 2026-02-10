@@ -12,17 +12,17 @@ public class App {
 
         HelloWorld bean1 =
                 (HelloWorld) applicationContext.getBean("helloworld");
-        System.out.println("HelloWorld bean1: " + bean1.getMessage());  // Исправлено!
+        System.out.println("HelloWorld bean1: " + bean1.getMessage());
 
 
         // Получаем ДВА раза бин Cat (singleton)
         Cat bean2 =
                 (Cat) applicationContext.getBean("cat");
-        System.out.println("Cat bean2: " + bean2.getMessage());  // Исправлено!
+        System.out.println("Cat bean2: " + bean2.getMessage());
 
         Cat bean3 =
                 (Cat) applicationContext.getBean("cat");
-        System.out.println("Cat bean3: " + bean3.getMessage());  // Исправлено!
+        System.out.println("Cat bean3: " + bean3.getMessage());
 
         // Сравниваем ссылки
         System.out.println("\n=== Сравнение ссылок ===");
